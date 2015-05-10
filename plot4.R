@@ -32,7 +32,7 @@ lines(rownames(usedData), as.numeric(as.character(usedData$Sub_metering_2)),
 lines(rownames(usedData), as.numeric(as.character(usedData$Sub_metering_3)), 
       col="blue")
 legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
-       lty,lwd=1, col=c("black", "red", "blue"), cex=0.5)
+       lty,lwd=1, col=c("black", "red", "blue"))
 axis(1, at=row.names(usedData[1,]), labels=weekdays(dmy(usedData$Date)[1]))
 mid <- subset(usedData, usedData$Date == "2/2/2007")
 axis(1, at=row.names(mid)[1], labels=weekdays(dmy(mid[1,1])))
